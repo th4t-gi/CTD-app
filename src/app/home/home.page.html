@@ -1,14 +1,131 @@
 <ion-header>
   <ion-toolbar>
     <ion-title>
-      Ionic Blank
+      Connect the Dots
     </ion-title>
   </ion-toolbar>
 </ion-header>
 
 <ion-content>
-  <div class="ion-padding">
-    The world is your oyster.
-    <p>If you get lost, the <a target="_blank" rel="noopener" href="https://ionicframework.com/docs/">docs</a> will be your guide.</p>
-  </div>
+
+  <!-- ITS THE MAP!!! -->
+  <div id='map'></div>
+
+  <ion-grid id='grid'>
+    <ion-row no-padding>
+      <ion-col no-padding>
+        <ion-button expand='block' fill='outline' no-margin no-padding>
+          <div>
+            <ion-icon name='home'></ion-icon>
+            <br>
+            <label>Housing</label>
+            <br>
+            <p class='spanish'>alojamiento</p>
+          </div>
+        </ion-button>
+      </ion-col>
+      <ion-col no-padding>
+        <ion-button expand='block' fill='outline' no-margin no-padding id="transportation">
+          <div>
+            <ion-icon name='car'></ion-icon>
+            <br>
+            <label>Transport</label>
+            <br>
+            <p class='spanish'>Transporte</p>
+          </div>
+        </ion-button>
+      </ion-col>
+      <ion-col no-padding>
+        <ion-button expand='block' fill='outline' no-margin no-padding>
+          <div>
+            <ion-icon name='pizza'></ion-icon>
+            <br>
+            <label>Food</label>
+            <br>
+            <p class='spanish'>comida</p>
+          </div>
+        </ion-button>
+      </ion-col>
+      <ion-col no-padding>
+        <ion-button expand='block' fill='outline' no-margin no-padding>
+          <div>
+            <ion-icon name='shirt'></ion-icon>
+            <br>
+            <label>Cloth</label>
+            <br>
+            <p class='spanish'>ropa</p>
+          </div>
+        </ion-button>
+      </ion-col>
+    </ion-row>
+    <ion-row no-padding>
+      <ion-col no-padding>
+        <ion-button expand='block' fill='outline' no-margin no-padding>
+          <div>
+            <ion-icon name="medkit"></ion-icon>
+            <br>
+            <label>Health</label>
+            <br>
+            <p class='spanish'>salud</p>
+          </div>
+        </ion-button>
+      </ion-col>
+      <ion-col no-padding>
+        <ion-button expand='block' fill='outline' no-margin no-padding>
+          <div>
+            <ion-icon name="hammer"></ion-icon>
+            <br>
+            <label>Jobs</label>
+            <br>
+            <p class='spanish'>trabajos</p>
+          </div>
+        </ion-button>
+      </ion-col>
+      <ion-col no-padding>
+        <ion-button expand='block' fill='outline' no-margin no-padding>
+          <div>
+            <ion-icon name='globe'></ion-icon>
+            <br>
+            <label>Education</label>
+            <br>
+            <p class='spanish'>educacion</p>
+          </div>
+        </ion-button>
+      </ion-col>
+      <ion-col no-padding>
+        <ion-button expand='block' fill='outline' no-margin no-padding>
+          <div>
+            <ion-icon src='/assets/toothbrush.svg'></ion-icon>
+            <br>
+            <label>Toiletries</label>
+            <br>
+            <p class='spanish'>artículos <br> de aseo</p>
+          </div>
+        </ion-button>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
 </ion-content>
+
+<!-- <ion-content>
+  <ion-item>
+    <ion-icon name="home" color="dark"></ion-icon>
+    <p>Housing</p>
+    <p>[spanish version of that]</p>
+  </ion-item>
+  <ion-item>
+    <ion-icon name="bus" color="dark"></ion-icon>
+    <p>Housing</p>
+    <p>[spanish version of that]</p>
+  </ion-item>
+  <ion-item>
+    <ion-icon name="hammer" color="dark"></ion-icon>
+    <p>Food</p>
+    <p>[spanish version of that]</p>
+  </ion-item>
+  <ion-item>
+    <ion-icon name="medical" color="dark"></ion-icon>
+    <p>Health</p>
+    <p>[spanish version of that]</p>
+  </ion-item>
+</ion-content> -->

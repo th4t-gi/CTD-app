@@ -1,1 +1,35 @@
+@function get-vw($target) {
+  $vw-context: (1000*0.1) * 1px;
+  @return ($target/$vw-context) *1 vw;
+}
 
+ion-icon {
+  font-size: 10vw;
+}
+
+ion-grid {
+
+  ion-row {
+    height: 25vw;
+    // border: 1px solid #989aa2;
+  }
+  // ion-col {
+  //   border: 1.5px solid #989aa2;
+  // }
+}
+
+ion-button {
+  height: 25vw;
+}
+
+label {
+  font-size: 3vw;
+}
+
+.spanish {
+  font-size: 2vw;
+}
+
+#map {
+  height: 50%;
+}
