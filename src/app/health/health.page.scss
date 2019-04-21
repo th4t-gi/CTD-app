@@ -1,0 +1,32 @@
+$square-width: 25vw;
+
+#map {
+  height: 50vh;
+}
+
+ion-button {
+  height: $square-width;
+}
+
+label {
+  font-size: ($square-width/10);
+}
+
+.spanish {
+  font-size: (2/25 * $square-width);
+}
+
+ion-grid {
+
+  ion-row {
+    height: $square-width;
+    // border: 1px solid #989aa2;
+  }
+  // ion-col {
+  //   border: 1.5px solid #989aa2;
+  // }
+}
+
+ion-icon {
+  font-size: (2/5 * $square-width);//15vw on home window
+}

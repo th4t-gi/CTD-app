@@ -1,4 +1,8 @@
-import { Component } from '@angular/core';
+import { Component, ViewChild, ElementRef } from '@angular/core';
+import { NavController, PopoverController} from '@ionic/angular';
+import { DetailPopoverComponent } from '../detail-popover/detail-popover.component';
+
+declare var google;
 
 @Component({
   selector: 'app-home',
@@ -7,6 +11,12 @@ import { Component } from '@angular/core';
 })
 export class HomePage {
 
+  @ViewChild('map') mapElement: ElementRef;
+  map: any;
+
+  constructor(public navCtrl: NavController, public popoverController: PopoverController) {
+
+  }
 
   ionViewDidEnter(){
     //Set latitude and longitude of some place
