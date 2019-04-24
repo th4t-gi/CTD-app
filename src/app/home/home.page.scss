@@ -1,16 +1,26 @@
-@function get-vw($target) {
-  $vw-context: (1000*0.1) * 1px;
-  @return ($target/$vw-context) *1 vw;
+$square-width: 25vw;
+
+#map {
+  height: calc(100vh - 50vw - 66px);
 }
 
-ion-icon {
-  font-size: 10vw;
+
+ion-button {
+  height: $square-width;
+}
+
+label {
+  font-size: (3/25 * $square-width);
+}
+
+.spanish {
+  font-size: (2/25 * $square-width);
 }
 
 ion-grid {
 
   ion-row {
-    height: 25vw;
+    height: $square-width;
     // border: 1px solid #989aa2;
   }
   // ion-col {
@@ -18,18 +28,10 @@ ion-grid {
   // }
 }
 
-ion-button {
-  height: 25vw;
+ion-icon {
+  font-size: (2/5 * $square-width);//15vw on home window
 }
 
-label {
-  font-size: 3vw;
-}
-
-.spanish {
-  font-size: 2vw;
-}
-
-#map {
-  height: 50%;
+.detail-popover {
+  --width: 200% !important;
 }
