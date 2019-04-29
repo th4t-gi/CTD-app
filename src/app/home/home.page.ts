@@ -25,9 +25,10 @@ export class HomePage {
     //Set latitude and longitude of some place
     this.map = new google.maps.Map(document.getElementById('map'), {
       center: { lat:  38.8461271, lng: -104.800644},
-      zoom: 15
+      zoom: 13
     });
     this.getdata();
+
   }
 
   async showDetails(ev: any) {
@@ -41,22 +42,25 @@ export class HomePage {
   }
 
   getdata() {
+    // uncomment this if you want the debugger to stop here
+    //debugger;
+    var map = this.map;
     consumer.query()
       .withDataset('sas5-6mn5')
       .getRows()
       .on('success', function(rows: any) {
-        console.log(rows);
-        let map = this.map
+        //console.log(rows);        
         rows.forEach(
           function (row) {
+                // uncomment this if you want the debugger to stop here
               let lat = row.geocoded_column.coordinates[1]
               let lon = row.geocoded_column.coordinates[0]
               let latLng = new google.maps.LatLng(lat, lon);
-
               let marker = new google.maps.Marker({
                   map: map,
                   animation: google.maps.Animation.DROP,
-                  position: latLng
+                  position: latLng,
+                  title: row.Name
               });
 
               //this.markers.push(marker);
